@@ -41,7 +41,7 @@ public class LoginPageTest extends BaseClass {
 		indexPage= new IndexPage();
 		Log.info("user is going to click on SignIn");
 		loginPage=indexPage.clickOnSignIn();
-		Log.info("Enter Username and Password");
+		Log.info("Enter Username and Password of ");
 	    //homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		homePage=loginPage.login(uname,pswd,homePage);
 	    String actualURL=homePage.getCurrURL();
